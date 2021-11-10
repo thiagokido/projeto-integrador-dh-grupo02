@@ -1,0 +1,125 @@
+#logged-area-main {
+    width: 100%;
+    height: 617px;
+    max-width: 1280px;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    background-color: white;
+}
+
+#registration {
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#registration > h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#personal-details {
+    width: 80%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+#personal-details div {
+    margin: 20px 0;
+}
+
+#personal-details > div > p {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#edit-change-password {
+    width: 80%;
+    line-height: 1.5;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-change-password > p > a{
+    text-decoration: underline;
+    color: white;
+}
+
+#schedule-history {
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+
+#schedule-history > h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+#schedule-history-list {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#schedule-history-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#schedule-history-list::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+}
+
+.schedule-details {
+    width: 95%;
+    height: 200px;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    box-sizing: border-box;
+    border: solid black 5px;
+}
+
+.schedule-barbershop {
+    width: 40%;
+    overflow: hidden;
+}
+
+.schedule-barbershop-img {
+    max-height: 100%;
+}
+
+.schedule-information {
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.schedule-information > h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}

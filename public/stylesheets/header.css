@@ -1,0 +1,187 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    padding: 0px 1%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    max-width: 1280px;
+    border-bottom: solid rgb(78, 78, 78) 1px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-logo-nav {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    margin-block: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-header {
+    height: 7em;
+}
+
+#checkbox-menu {
+    appearance: none;
+    display: none;
+}
+
+#checkbox-menu ~ label {
+    display: none;
+    width: 100%;
+}
+
+#search-login{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-links {
+    text-decoration: none;
+    color: white;
+}
+
+#header-search {
+    display: flex;
+    list-style: none;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#header-search li .material-icons-outlined{
+    margin: 0px 5px;
+}
+
+#header-search .search{
+    margin: 0px 5px;
+    text-align: end;
+}
+
+#header-search .search a{
+    text-decoration: none;
+    color: white;
+}
+
+#header-login {
+    display: flex;
+    list-style: none;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+#header-login li .material-icons-outlined{
+    margin: 0px 5px;
+}
+
+#header-login .login{
+    margin: 0px 5px;
+    text-align: end;
+}
+
+#header-login .login a {
+    text-decoration: none;
+    color: white;
+}
+
+#responsive-menu {
+    display: none;
+}
+
+.header-items:hover {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .logo-header {
+        height: 5em;
+    }
+
+    #checkbox-menu ~ label {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 2em;
+    }
+
+    /* #checkbox-menu ~ label > span {
+        border: solid white;
+        border-width: 1px;
+        padding: 3px;
+        border-radius: 5px;
+    } */
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    #search-login {
+        display: none;
+    }
+
+    #checkbox-menu:checked ~ nav {
+        display: flex;
+    }
+
+    #checkbox-menu:checked ~ #search-login{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #search-login div ul {
+        justify-content: flex-end;
+        padding: 7px;
+    }
+
+    #header-logo-nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #header-logo-nav .header-items {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    #checkbox-menu ~ label {
+        width: auto;
+        padding: 0;
+    }
+}

@@ -1,0 +1,112 @@
+footer {
+    background-color: black;
+    height: 22vh;
+    color: white;
+    font-family: 'Nunito Sans',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    /* padding: 0 2%; */
+    justify-content: space-evenly;
+    border-top: solid rgb(78, 78, 78) 1px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    width: 30%;
+}
+
+.footer-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.logo-footer {
+    background: url('../images/logo-ibarber-2.png') no-repeat center center;
+    background-size:contain;
+    height: 7em;
+    width: 30%
+
+}
+
+.social-media {
+    width: 30%;
+}
+
+.social-media ul{
+    color: white;
+    font-size: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social-media ul li {
+    padding: 20px;
+}
+
+.footer-address-copyright {
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+
+    footer {
+        height: 20vh;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+    .footer-nav ul {
+        justify-content: center;
+    }
+
+    .footer-nav ul li {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+
+    .logo-footer {
+        height: 5em;
+        order: -1;
+    }
+
+    .social-media {
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .social-media ul li {
+        padding: 2vw;
+    }
+
+    .footer-address-copyright {
+        font-size: 2vw;
+    }
+}

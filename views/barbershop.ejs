@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/barbershop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+            <ul id="header-login">
+                <li  class="login"><a href="/login">LOGIN</a></li>
+                <li><span class="material-icons-outlined">login</span></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <main id=barbershop-main>
+        <div id="barbershop-img-schedule">
+            <div id=barbershop-img-carousel>
+                <div id=barbershop-img>
+                    <ul class="barbershop-img-slider">
+                        <li>
+                            <input type="radio" id="slide1" name="slide" checked>
+                            <label for="slide1"></label>
+                            <div class="slider-img">
+                                <img src="images/barbearia-santo-bigode.jpg" alt="santo-bigode-1">
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" id="slide2" name="slide">
+                            <label for="slide2"></label>
+                            <div class="slider-img"><img src="images/barbearia-santo-bigode-2.jpg" alt="santo-bigode-2"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="slide3" name="slide">
+                            <label for="slide3"></label>
+                            <div class="slider-img"><img src="images/barbearia-santo-bigode-3.jpg" alt="santo-bigode-3"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="slide4" name="slide">
+                            <label for="slide4"></label>
+                            <div class="slider-img"><img src="images/barbearia-santo-bigode-4.jpg" alt="santo-bigode-4"></div>
+                        </li>
+                        <li>
+                            <input type="radio" id="slide5" name="slide">
+                            <label for="slide5"></label>
+                            <div class="slider-img"><img src="images/barbearia-santo-bigode-5.jpg" alt="santo-bigode-5"></div>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <a href="#" class="modal__overlay" aria-label="Fechar"></a>
+            </div> 
+            <div id="barbershop-schedule-form">
+                <div>
+                    <form action="" id="schedule-form">
+                        <legend>Agende um horário</legend>
+                        <label for="service">Selecione um serviço:</label>
+                        <input list="services" id="service" name="service" class="schedule-form-input">
+                        <datalist id="services">
+                            <option value="Barba">Barba</option>
+                            <option value="Cabelo">Cabelo</option>
+                            <option value="Barba + Cabelo">Barba + Cabelo</option>
+                        </datalist>
+                        <label for="schedule-date">Selecione uma data:</label>
+                        <input type="date" id="schedule-date" name="schedule-date" class="schedule-form-input">
+                        <label for="schedule-time">Selecione um horário:</label>
+                        <input type="time" id="schedule-time" name="schedule-time" class="schedule-form-input">
+                        <input type="submit" value="Finalizar agendamento" class="schedule-form-submit">
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <div id="details-info">
+            <h2>BARBEARIA SANTO BIGODE</h2>
+            <details class="details-topic">
+                <summary class="details-summary">SOBRE A BARBEARIA SANTO BIGODE</summary>
+                <div>
+                    <p>Somos o espaço do homem em Mogi das Cruzes e Região. Com um ambiente descontraído pensado exclusivamente para o homem de bom gosto, com bar para beber aquela cervejinha gelada enquanto aguarda o atendimento, e tudo isso ao som dos melhores classic rock, jazz e blues. Na Barbearia Santo Bigode, oferecemos diversos serviços diferenciados com um altíssimo padrão de qualidade.</p>
+                </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">SERVIÇOS E PREÇOS</summary>
+                <div>
+                    <ul>
+                        <li>Barba</li>
+                        <li>Cabelo</li>
+                        <li>Barba + Cabelo</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">EXTRAS</summary>
+                <div>
+                    <p>Você pode esperar sua vez jogando um Playstation 4, ou assistindo lutas diretamente do Canal Combate e transmissão Ao Vivo de jogos de futebol (UEFA Champions League, LA Liga, Premier League e mais).Assim você pode relaxar e assistir ao seu esporte preferido enquanto damos um trato na sua barba e cabelo</p>
+                </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">ENDEREÇO</summary>
+                <div>
+                    <p>Rua Manuel de Oliveira Falcão, 269 - Vila Nova das Belezas - São Paulo, SP - 0577-100</p>
+                </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">HORÁRIO DE FUNCIONAMENTO</summary>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Segunda-feira</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Terça-feira</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Quarta-feira</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Quinta-feira</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Sexta-feira</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Sábado</th>
+                                <th>10h as 20h</th>
+                            </tr>
+                            <tr>
+                                <th>Domingo</th>
+                                <th>Fechado</th>
+                            </tr>
+                        </table>
+                    </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">TELEFONE</summary>
+                <div>
+                    <ul>
+                        <li>(11) 2500-0131</li>
+                        <li>(11) 98585-6615</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="details-topic">
+                <summary class="details-summary">REDES SOCIAIS</summary>
+                <div>
+                    <p><i class="fa fa-facebook-square"></i> facebook/santobigodebarbearia</p>
+                    <p><i class="fa fa-instagram"></i> @barbeariasantobigode</p>
+                </div>
+            </details>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>

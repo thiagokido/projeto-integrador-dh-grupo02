@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Crie sua conta - iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+            <ul id="header-login">
+                <li  class="login"><a href="/login">LOGIN</a></li>
+                <li><span class="material-icons-outlined">login</span></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <main id="signup-main">
+        <div id="signup-img"></div>
+        <div id="signup-form">
+            <form action="#modal-signup-confirmation" id="signup-form-group">
+                <legend>CRIE SUA CONTA</legend>
+                <label for="nome-sobrenome">Nome e Sobrenome:</label>
+                <input class="signup-inputs" type="text" id="nome-sobrenome" name="nome-sobrenome" required>
+                <label for="telefone">Telefone:</label>
+                <input class="signup-inputs" type="tel" id="telefone" name="telefone" required>
+                <label for="email">E-mail:</label>
+                <input class="signup-inputs" type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input class="signup-inputs" type="password" id="senha" name="senha" required>
+                <input id="signup-submit" type="submit" id="signup" name="signup" value="Finalizar cadastro">
+            </form>
+            <p>Já tem um cadastro? Acesse sua conta AQUI</p>
+        </div>
+        <div id="modal-signup-confirmation">
+            <div id="signup-confirmed">
+                <p><span class="material-icons">recommend</span></p>
+                <div  class="confirmation">
+                    <p>PARABÉNS!</p>
+                    <p>SEU CADASTRO FOI REALIZADO!</p>
+                </div>
+                <div id="modal-signup-confirmation-close">
+                    <a href="/">Fechar</a>
+                </div>
+            </div>  
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>
+</body>

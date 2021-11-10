@@ -1,0 +1,217 @@
+#barbershop-main {
+    width: 100%;
+    max-width: 1280px;
+    font-family: 'Nunito Sans',sans-serif;
+    background-color: white;
+}
+
+#barbershop-img-schedule {
+    height: 630px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#barbershop-img-carousel {
+    width: 67%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#barbershop-img {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+#barbershop-schedule-form {
+    width: 34%;
+    height: 100%;
+    background-color: black;
+    opacity: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#barbershop-schedule-form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25%;
+}
+
+#schedule-form {
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+#schedule-form legend {
+    color: white;
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#schedule-form label {
+    color: white;
+    padding: 9px 0px 4px 0px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+#schedule-form .schedule-form-input {
+    margin: 4px 0px 9px 0px;
+    width: 100%;
+    height: 2.5em;
+    border: 0;
+    padding: 0 1em;
+    border-radius: 5px;
+}
+
+#schedule-form .schedule-form-submit {
+    width: 100%;
+    border: 0;
+    padding: 0 1em;
+    height: 3em;
+    border-radius: 5px;
+    background-color: rgb(163, 163, 163);
+    color: white;
+    margin: 2.5em 0px 9px 0px;
+    box-sizing: initial;
+}
+
+.barbershop-img-slider {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+.barbershop-img-slider li {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.barbershop-img-slider input {
+    display: none;
+}
+
+.barbershop-img-slider label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.barbershop-img-slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.barbershop-img-slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.barbershop-img-slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.barbershop-img-slider li:nth-child(4) label {
+    left: 100px;
+}
+
+.barbershop-img-slider li:nth-child(5) label {
+    left: 130px;
+}
+
+.barbershop-img-slider .slider-img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.barbershop-img-slider li input:checked ~ .slider-img {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+
+.slider-img img {
+    max-height: 100%;
+}
+
+#details-info {
+    color: white;
+    padding: 40px 40px;
+    background-color: black;
+    opacity: 91%;
+}
+
+#details-info h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 50px 0; 
+    font-weight: bold;
+}
+
+#details-info h3 {
+    font-size: 24px;
+    padding: 30px 0 0px 0;
+}
+
+#details-info p, #details-info ul{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px 0 10px 0;
+}
+
+#details-info table {
+    margin-top: 30px;
+}
+
+#details-info table tr {
+    height: 30px;
+    width: 100px;
+}
+
+#details-info table tr th:nth-child(1){
+    text-align: left;
+    width: 150px;
+}
+
+.details-topic {
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.details-summary {
+    padding: 20px 20px;
+    background-color: rgb(19, 19, 19);
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    /* border: solid 1px; */
+}
+
+.details-topic div {
+    padding: 20px;
+}

@@ -1,0 +1,100 @@
+#login-main {
+    height: 617px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    max-width: 1280px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+}
+
+#login-img {
+    background: url(../images/signin-img.jpg) no-repeat center center;
+    height: 617px;
+    width: 60%;
+    background-size: cover;
+}
+
+#login-form {  
+    width: 40%;
+    height: 617px;
+    background-color: black;
+    opacity: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#login-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#login-form-group legend {
+    color: white;
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#login-form-group label {
+    color: white;
+    padding: 9px 0px 4px 0px;
+    width: 60%;
+    align-items: flex-start;
+}
+
+#login-form-group .login-inputs {
+    margin: 4px 0px 9px 0px;
+    width: 60%;
+    height: 2.5em;
+    border: 0;
+    padding: 0 1em;
+    border-radius: 5px;
+}
+
+#login-form-group #login-submit {
+    width: 60%;
+    border: 0;
+    padding: 0 1em;
+    height: 3em;
+    border-radius: 5px;
+    background-color: rgb(163, 163, 163);
+    color: white;
+    margin: 2.5em 0px 9px 0px;
+    box-sizing: initial;
+}
+
+#login-form #password-recovery-signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+#password-recovery-signup p{
+    padding: 7px 0px;
+}
+
+#password-recovery-signup p a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 425px) {
+
+    #login-img {
+        display: none;
+    }
+
+    #login-form {
+        width: 100%;
+        background: url(../images/signin-img.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}

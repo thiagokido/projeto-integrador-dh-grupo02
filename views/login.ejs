@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login - iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+            <ul id="header-login">
+                <li  class="login"><a href="/login">LOGIN</a></li>
+                <li><span class="material-icons-outlined">login</span></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <main id="login-main">
+        <div id="login-img"></div>
+        <div id="login-form">
+            <form id="login-form-group" action="/logged-area">
+                <legend>Faça seu login</legend>
+                <label for="login-email">Endereço de e-mail</label>
+                <input class="login-inputs" type="email" id="login-email" name="login-email" required>
+                <label for="login-password">Senha</label>
+                <input class="login-inputs" type="password" id="login-password" name="login-password" required>
+                <input class="login-submit" type="submit" id="login-submit" value="LOGIN">
+            </form>
+            <div id="password-recovery-signup">
+                <p><a href="#">Esqueci minha senha</a></p>
+                <p><a href="/signup">Ainda não tenho um cadastro</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>  
+</body>
+</html>

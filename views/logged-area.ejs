@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/logged-area.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Seu cadastro - iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+            <ul id="header-login">
+                <li  class="login"><a href="/login">LOGIN</a></li>
+                <li><span class="material-icons-outlined">login</span></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <main id="logged-area-main">
+        <div id="registration">
+            <h2>Seu cadastro</h2>
+            <div id="personal-details">
+                <div>
+                    <h3>Nome e Sobrenome:</h3>
+                    <p>João da Silva</p>
+                </div>
+                <div>
+                    <h3>Endereço de email:</h3>
+                    <p>joaodasilva@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Telefone:</h3>
+                    <p>(11) 94532-1500</p>
+                </div>
+            </div>
+            <div id="edit-change-password">
+                <p><a href="#">Editar cadastro</a></p>
+                <p><a href="#">Alterar senha</a></p>
+            </div>
+        </div>
+        <div id=schedule-history>
+            <h2>Seus agendamentos</h2>
+            <div id="schedule-history-list">
+                <div class="schedule-details">
+                    <div class="schedule-barbershop">
+                        <img class="schedule-barbershop-img" src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="schedule-information">
+                        <h3>Barbearia 1</h3>
+                        <p>Data: 16/10/2021</p>
+                        <p>Horário: 10:00</p>
+                        <p>Serviço: serviço 1</p>
+                        <p>Status: Confirmado pela barbearia</p>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="schedule-barbershop">
+                        <img class="schedule-barbershop-img" src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="schedule-information">
+                        <h3>Barbearia 1</h3>
+                        <p>Data: 16/10/2021</p>
+                        <p>Horário: 10:00</p>
+                        <p>Serviço: serviço 1</p>
+                        <p>Status: Confirmado pela barbearia</p>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="schedule-barbershop">
+                        <img class="schedule-barbershop-img" src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="schedule-information">
+                        <h3>Barbearia 1</h3>
+                        <p>Data: 16/10/2021</p>
+                        <p>Horário: 10:00</p>
+                        <p>Serviço: serviço 1</p>
+                        <p>Status: Confirmado pela barbearia</p>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="schedule-barbershop">
+                        <img class="schedule-barbershop-img" src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="schedule-information">
+                        <h3>Barbearia 1</h3>
+                        <p>Data: 16/10/2021</p>
+                        <p>Horário: 10:00</p>
+                        <p>Serviço: serviço 1</p>
+                        <p>Status: Confirmado pela barbearia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>
+</body>
+</html>

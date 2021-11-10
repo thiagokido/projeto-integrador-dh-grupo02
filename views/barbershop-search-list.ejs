@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/barbershop-search-list.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+                <ul id="header-login">
+                    <li  class="login"><a href="/login">LOGIN</a></li>
+                    <li><span class="material-icons-outlined">login</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="search-main">
+        <div id="search-container">
+            <p><span class="material-icons-outlined">search</span></p>
+            <input type="serach" id="search-barbershop">
+        </div>
+        <div id="search-result-container">
+            <div id="search-list">
+                <div class="barbershop-list">
+                    <div class="barbershop-img">
+                        <img src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="barbershop-list-details">
+                        <h3>Barbearia 1</h3>
+                        <div>
+                            <h4>Endereço:</h4>
+                            <p>Rua Dr. Rafael de Barros, 200 - Paraíso - São Paulo -SP, 04003-042</p>
+                        </div>
+                        <div>
+                            <h4>Horário de funcionamento:</h4>
+                            <p>10h as 20h</p>
+                        </div>
+                        <p><a href="/barbershop">Detalhes</a></p>
+                    </div>
+                </div>
+                <div class="barbershop-list">
+                    <div class="barbershop-img">
+                        <img src="images/barbearia-lista-2.jpg" alt="">
+                    </div>
+                    <div class="barbershop-list-details">
+                        <h3>Barbearia 2</h3>
+                        <div>
+                            <h4>Endereço:</h4>
+                            <p>Rua Afonso de Freitas, 350 - Paraíso - São Paulo - SP, 04006-010</p>
+                        </div>
+                        <div>
+                            <h4>Horário de funcionamento:</h4>
+                            <p>10h as 20h</p>
+                        </div>
+                        <p><a href="/barbershop">Detalhes</a></p>
+                    </div>
+                </div>
+                <div class="barbershop-list">
+                    <div class="barbershop-img">
+                        <img src="images/barbearia-lista-1.jpg" alt="">
+                    </div>
+                    <div class="barbershop-list-details">
+                        <h3>Barbearia 3</h3>
+                        <div>
+                            <h4>Endereço:</h4>
+                            <p>Rua Dr. Rafael de Barros, 200 - Paraíso - São Paulo -SP, 04003-042</p>
+                        </div>
+                        <div>
+                            <h4>Horário de funcionamento:</h4>
+                            <p>10h as 20h</p>
+                        </div>
+                        <p><a href="/barbershop">Detalhes</a></p>
+                    </div>
+                </div>
+                <div class="barbershop-list">
+                    <div class="barbershop-img">
+                        <img src="images/barbearia-lista-2.jpg" alt="">
+                    </div>
+                    <div class="barbershop-list-details">
+                        <h3>Barbearia 4</h3>
+                        <div>
+                            <h4>Endereço:</h4>
+                            <p>Rua Afonso de Freitas, 350 - Paraíso - São Paulo - SP, 04006-010</p>
+                        </div>
+                        <div>
+                            <h4>Horário de funcionamento:</h4>
+                            <p>10h as 20h</p>
+                        </div>
+                        <p><a href="/barbershop">Detalhes</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="map-container">
+                <iframe class="barbershop-map-search" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3658.6364712931254!2d-46.194789084476646!3d-23.509599965569244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1635896142015!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
