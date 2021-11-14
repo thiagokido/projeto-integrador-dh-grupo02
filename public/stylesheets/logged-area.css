@@ -4,7 +4,17 @@
     max-width: 1280px;
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
-    background-color: white;
+    background-color: black;
+    color: white;
+}
+
+#registration-tab, #history-tab {
+    display: none;
+}
+
+#registration-tab-label, #history-tab-label {
+    margin: 1em 0.5em;
+    text-align: right;
 }
 
 #registration {
@@ -122,4 +132,42 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+@media (max-width: 425px) {
+    
+    #logged-area-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #registration {
+        width: 100%;
+        padding: 4em 0 ;
+    }
+
+    #schedule-history {
+        display: none;
+        width: 100%;
+    }
+
+    #schedule-history h2 {
+        margin: 1em 0;
+    }
+
+    #history-tab:checked ~ #history-tab-label {
+        display: none;
+    }
+
+    #history-tab:checked ~ #registration {
+        display: none;
+    }
+
+    #history-tab:checked ~ #schedule-history {
+        display: flex;
+    }
+
+    #registration-tab:checked ~ #registration-tab-label {
+        display: none;
+    }
 }
