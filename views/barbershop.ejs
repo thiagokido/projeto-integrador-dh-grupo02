@@ -83,19 +83,19 @@
             </div> 
             <div id="barbershop-schedule-form">
                 <div>
-                    <form action="" id="schedule-form">
+                    <form action="/barbershop/schedule" id="schedule-form" method="post">
                         <legend>Agende um horário</legend>
                         <label for="service">Selecione um serviço:</label>
-                        <input list="services" id="service" name="service" class="schedule-form-input">
+                        <input list="services" id="service" name="scheduleService" class="schedule-form-input">
                         <datalist id="services">
                             <option value="Barba">Barba</option>
                             <option value="Cabelo">Cabelo</option>
                             <option value="Barba + Cabelo">Barba + Cabelo</option>
                         </datalist>
                         <label for="schedule-date">Selecione uma data:</label>
-                        <input type="date" id="schedule-date" name="schedule-date" class="schedule-form-input">
+                        <input type="date" id="schedule-date" name="scheduleDate" class="schedule-form-input">
                         <label for="schedule-time">Selecione um horário:</label>
-                        <input type="time" id="schedule-time" name="schedule-time" class="schedule-form-input">
+                        <input type="time" id="schedule-time" name="scheduleTime" class="schedule-form-input">
                         <input type="submit" value="Finalizar agendamento" class="schedule-form-submit">
                     </form>
                 </div>
