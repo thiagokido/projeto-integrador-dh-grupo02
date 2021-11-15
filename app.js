@@ -10,7 +10,7 @@ var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
 var loggedAreaRouter = require('./routes/logged-area')
 var barbershopRouter = require('./routes/barbershop')
-var barbershopSearchListRouter = require('./routes/barbershop-search-list')
+var barbershopSearchListRouter = require('./routes/barbershop-search-list');
 
 var app = express();
 

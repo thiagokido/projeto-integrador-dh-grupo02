@@ -13,6 +13,7 @@
 }
 
 #registration-tab-label, #history-tab-label {
+    display: none;
     margin: 1em 0.5em;
     text-align: right;
 }
@@ -139,6 +140,10 @@
     #logged-area-main {
         flex-direction: column;
         height: auto;
+    }
+
+    #history-tab-label, #registration-tab-label {
+        display: flex;
     }
 
     #registration {

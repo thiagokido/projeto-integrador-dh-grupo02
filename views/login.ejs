@@ -47,12 +47,12 @@
     <main id="login-main">
         <div id="login-img"></div>
         <div id="login-form">
-            <form id="login-form-group" action="/logged-area">
+            <form id="login-form-group" method="POST" action="/login/enter" enctype="application/x-www-form-urlencoded">
                 <legend>Faça seu login</legend>
                 <label for="login-email">Endereço de e-mail</label>
-                <input class="login-inputs" type="email" id="login-email" name="login-email" required>
+                <input class="login-inputs" type="email" id="login-email" name="loginEmail" required>
                 <label for="login-password">Senha</label>
-                <input class="login-inputs" type="password" id="login-password" name="login-password" required>
+                <input class="login-inputs" type="password" id="login-password" name="loginPassword" required>
                 <input class="login-submit" type="submit" id="login-submit" value="LOGIN">
             </form>
             <div id="password-recovery-signup">
