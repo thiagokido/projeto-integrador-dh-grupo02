@@ -10,7 +10,7 @@ function barbershopSchedule (req, res) {
         datetime: moment(req.body.scheduleDate + ' ' + req.body.scheduleTime).format('YYYY-MM-DD HH:mm:ss'),
         createdAt: new Date()
     }
-    res.redirect('/logged-area')
+    res.redirect('/login/customer/1')
 }
 
 module.exports = {

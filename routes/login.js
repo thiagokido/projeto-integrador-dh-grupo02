@@ -1,11 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const {loginView,loginUser} = require('../controllers/loginController')
+const { loginView, loginValidation, loggedCustomer } = require('../controllers/loginController')
 
 /* GET LOGIN PAGE */
 
 router.get('/', loginView)
 
-router.post('/enter', loginUser)
+router.post('/enter', loginValidation)
+
+router.get('/customer/:id', loggedCustomer)
 
 module.exports = router;
