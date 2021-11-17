@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/barbershop-registration.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>iBarber</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
+        <nav>
+            <ul id="header-logo-nav">
+                <li class="header-items"><a href="/" class="header-links">HOME</a></li>
+                <li class="header-items">QUEM SOMOS</li>
+                <li class="header-items">CONTATO</li>
+                <li class="header-items">AJUDA</li>
+                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+            </ul>
+        </nav>
+        <div id="search-login">
+            <div>
+                <ul id="header-search">
+                    <li  class="search"><a href="/barbershop-search-list">BUSCAR</a></li>
+                    <li><span class="material-icons-outlined">search</span></li>
+                </ul>
+            </div>
+            <div>
+                <ul id="header-login">
+                    <li  class="login"><a href="/login">LOGIN</a></li>
+                    <li><span class="material-icons-outlined">login</span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="barbershop-registration-main">
+        <h2 id="title-form">CADASTRE SUA BARBEARIA</h2>
+        <form id="form-barbershop" action="/barbershop-registration/register" method="POST">
+            <fieldset>
+                <legend>Informações gerais</legend>
+                <div>
+                    <label for="barbershop-name">Nome da barbearia:</label>
+                    <input type="text" name="nome" id="barbershop-name">
+                </div>
+                <div>
+                    <label for="barbershop-doc">CNPJ:</label>
+                    <input type="text" name="cnpj" id="barbershop-doc">
+                </div>
+                <div id="about-barbershop">
+                    <label for="about">Conte-nos sobre sua barbearia:</label>
+                    <textarea name="sobre" id="about" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Localização</legend>
+                <div>
+                    <label for="barbershop-zipcode">CEP:</label>
+                    <input type="text" name="cep" id="barbershop-zipcode">
+                </div>
+                <div>
+                    <label for="address">Endereço:</label>
+                    <input type="text" name="endereco" id="address">
+                </div>
+                <div>
+                    <label for="address-number">Número:</label>
+                    <input type="text" name="numero" id="address-number">
+                </div>
+                <div>
+                    <label for="district">Bairro:</label>
+                    <input type="text" name="bairro" id="district">
+                </div>
+                <div>
+                    <label for="city">Cidade:</label>
+                    <input type="text" name="cidade" id="city">
+                </div>
+                <div>
+                    <label for="state">Estado:</label>
+                    <input type="text" name="estado" id="state">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Serviços e Preços</legend>
+                <div>
+                    <label for="cabelo">Cabelo:</label>
+                    <input type="number" min="1" step="0.01">
+                </div>
+                <div>
+                    <label for="barba">Barba:</label>
+                    <input type="number" min="1" step="0.01">
+                </div>
+                <div>
+                    <label for="cabelo-barba">Cabelo + Barba:</label>
+                    <input type="number" min="1" step="0.01">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Horário de funcionamento</legend>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="monday" name="monday" value="monday">
+                    <label for="monday">Segunda-feira</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-monday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-monday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                    <label for="tuesday">Terça-feira</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-tuesday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-tuesday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+                    <label for="wednesday">Quarta-feira</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-wednesday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-wednesday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="thursday" name="thursday" value="thursday">
+                    <label for="thursday">Quinta-feira</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-thursday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-thursday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="friday" name="friday" value="friday">
+                    <label for="friday">Sexta-feira</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-friday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-friday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="saturday" name="saturday" value="saturday">
+                    <label for="saturday">Sábado</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-saturday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-saturday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+                <div class="opening-hours">
+                    <input class="weekday" type="checkbox" id="sunday" name="sunday" value="">
+                    <label for="sunday">Domingo</label>
+                    <div class="opening-config">
+                        <label for="opening">Abertura</label>
+                        <input type="time" id="opening" name="opening-hour-sunday">
+                        <label for="closing">Fechamento</label>
+                        <input type="time" id="closing" name="closing-time-sunday">
+                    </div>
+                    <label for="closed" id="closed">Fechado</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contatos</legend>
+                <div>
+                    <label for="email">e-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone">telefone:</label>
+                    <input type="phone" id="phone" name="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Redes Sociais</legend>
+                <div>
+                    <label for="facebook">Facebook</label>
+                    <input type="text" id="facebook" name="facebook">
+                </div>
+                <div>
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram">
+                </div>
+            </fieldset>
+            <input id="registration-submit" type="submit" value="CADASTRAR">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <ul>
+                    <li>SOBRE NÓS</li>
+                    <li>CONTATO</li>
+                    <li>AJUDA</li>
+                </ul>
+            </div>
+            <div class="logo-footer"></div>
+            <div class="social-media">
+                <ul>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-address-copyright">
+            <p>CNPJ: XX.XXX.XXX/XXXX-XX / Endereço Avenida Paulista 123 - São Paulo, SP - 01311-000 </p>
+            <p>© Copyright 2021 - iBarber - Todos os direitos reservados </p>
+        </div>
+    </footer>    
+</body>
+</html>
