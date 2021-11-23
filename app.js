@@ -10,7 +10,6 @@ var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
 var loggedAreaRouter = require('./routes/logged-area');
 var barbershopRouter = require('./routes/barbershop');
-var barbershopRegistrationRouter = require('./routes/barbershop-registration');
 
 var app = express();
 
@@ -30,7 +29,6 @@ app.use('/login', loginRouter);
 app.use('/signup', signupRouter);
 app.use('/logged-area', loggedAreaRouter);
 app.use('/barbershop', barbershopRouter);
-app.use('/barbershop-registration', barbershopRegistrationRouter);
 
 
 // catch 404 and forward to error handler
