@@ -8,7 +8,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
-var loggedAreaRouter = require('./routes/logged-area');
 var barbershopRouter = require('./routes/barbershop');
 
 var app = express();
@@ -27,7 +26,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/signup', signupRouter);
-app.use('/logged-area', loggedAreaRouter);
 app.use('/barbershop', barbershopRouter);
 
 
