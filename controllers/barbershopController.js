@@ -17,8 +17,29 @@ function barbershopSchedule (req, res) {
     res.redirect('/login/customer/1')
 }
 
+const barbershops = [
+    {
+        id: 1,
+        name: "barbearia do josé",
+        endereço: "rua do josé 01"
+    },
+    {
+        id:2,
+        name: "barbearia do joão",
+        endereço: "rua do joão 02"
+    }
+
+]
+
+function barbershopDetails (req, res) {
+    const barbershopId = req.params.id
+    const barbershop = barbershops.filter( (i) => i.id == barbershopId )
+    res.send( barbershop )
+}
+
 module.exports = {
     barbershopView,
+    barbershopDetails,
     barbershopSearchListView,
     barbershopSchedule
 }

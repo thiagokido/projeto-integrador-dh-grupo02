@@ -8,8 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/login');
 var signupRouter = require('./routes/signup');
-var loggedAreaRouter = require('./routes/logged-area')
-var barbershopRouter = require('./routes/barbershop')
+var loggedAreaRouter = require('./routes/logged-area');
+var barbershopRouter = require('./routes/barbershop');
 var barbershopRegistrationRouter = require('./routes/barbershop-registration');
 
 var app = express();
