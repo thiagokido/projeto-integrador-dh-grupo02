@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/header.css">
-    <link rel="stylesheet" href="stylesheets/footer.css">
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="../../stylesheets/reset.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="../../stylesheets/header.css">
+    <link rel="stylesheet" href="../../stylesheets/footer.css">
+    <link rel="stylesheet" href="../../stylesheets/login.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <div id="logo"><img src="images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
+        <div id="logo"><img src="../../images/logo-ibarber-2.png" alt="logo-ibarber" class="logo-header"></div>
         <input type="checkbox" id="checkbox-menu">
         <label for="checkbox-menu"><span class="material-icons-outlined">menu</span></label>
         <nav>
@@ -26,7 +26,7 @@
                 <li class="header-items">QUEM SOMOS</li>
                 <li class="header-items">CONTATO</li>
                 <li class="header-items">AJUDA</li>
-                <li class="header-items"><a href="/signup" class="header-links">CADASTRE-SE</a></li>
+                <li class="header-items"><a href="/users/signup" class="header-links">CADASTRE-SE</a></li>
             </ul>
         </nav>
         <div id="search-login">
@@ -38,7 +38,7 @@
             </div>
             <div>
             <ul id="header-login">
-                <li  class="login"><a href="/login">LOGIN</a></li>
+                <li  class="login"><a href="/users/login">LOGIN</a></li>
                 <li><span class="material-icons-outlined">login</span></li>
             </ul>
             </div>
@@ -47,7 +47,7 @@
     <main id="login-main">
         <div id="login-img"></div>
         <div id="login-form">
-            <form id="login-form-group" method="POST" action="/login/enter" enctype="application/x-www-form-urlencoded">
+            <form id="login-form-group" method="POST" action="/users/login/" enctype="application/x-www-form-urlencoded">
                 <legend>Faça seu login</legend>
                 <label for="login-email">Endereço de e-mail</label>
                 <input class="login-inputs" type="email" id="login-email" name="loginEmail" required>
@@ -57,7 +57,7 @@
             </form>
             <div id="password-recovery-signup">
                 <p><a href="#">Esqueci minha senha</a></p>
-                <p><a href="/signup">Ainda não tenho um cadastro</a></p>
+                <p><a href="/users/signup">Ainda não tenho um cadastro</a></p>
             </div>
         </div>
     </main>
