@@ -18,10 +18,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       cpf: {
-        type: Sequelize.NUMERIC
+        type: Sequelize.STRING(11)
       },
       phone_number: {
-        type: Sequelize.NUMERIC
+        type: Sequelize.STRING
       },
       active: {
         type: Sequelize.BOOLEAN

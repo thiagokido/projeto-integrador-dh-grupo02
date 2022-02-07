@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     first_name: DataTypes.STRING,
     last_name: DataTypes.STRING,
     email: DataTypes.STRING,
-    cpf: DataTypes.NUMERIC,
-    phone_number: DataTypes.NUMERIC,
+    cpf: DataTypes.STRING(11),
+    phone_number: DataTypes.STRING,
     active: DataTypes.BOOLEAN
   }, {
     sequelize,
