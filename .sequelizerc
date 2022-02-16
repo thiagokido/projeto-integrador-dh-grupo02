@@ -3,6 +3,4 @@ const path = require('path');
 module.exports = {
   'config': path.resolve('c:/projeto-integrador/iBarber/api/config', 'config.json'),
   'models-path': path.resolve('c:/projeto-integrador/iBarber/api/models'),
-  'seeders-path': path.resolve('c:/projeto-integrador/iBarber/api/seeders'),
-  'migrations-path': path.resolve('c:/projeto-integrador/iBarber/api/migrations')
 }
