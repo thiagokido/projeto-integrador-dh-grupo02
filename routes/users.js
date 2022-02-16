@@ -6,19 +6,12 @@ router.get('/login', loginView)
 
 router.post('/login', findCustomer)
 
-// router.post('/login', loginValidation)
-
-router.get('/customer/:id', loggedCustomer)
+router.post('/:id', loggedCustomer)
 
 router.get('/signup', signupView)
-
-// router.post('/register', signupCreate)
-
-// router.get('/', index)
 
 router.post('/create', createCustomer)
 
 router.put('/update/:id', updateCustomer)
-
 
 module.exports = router;
