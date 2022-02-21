@@ -6,7 +6,7 @@ router.get('/login', loginView)
 
 router.post('/login', findCustomer)
 
- router.post('customer/:id', findCustomerById)
+router.get('/find/:id', findCustomerById)
 
 router.get('/signup', signupView)
 
