@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-const { loginView, signupView, createCustomer, updateCustomer, findCustomer } = require('../controllers/usersController')
+const { loginView, signupView, createCustomer, updateCustomer, findCustomer, findCustomerById } = require('../controllers/usersController')
 
 router.get('/login', loginView)
 
 router.post('/login', findCustomer)
 
-// router.post('/:id', loggedCustomer)
+router.post('/:id', findCustomerById)
 
 router.get('/signup', signupView)
 
