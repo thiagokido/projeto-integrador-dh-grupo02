@@ -20,6 +20,8 @@ module.exports = {
 
         res.redirect('/users/login')
 
+        // res.render(result)
+
     },
 
     //Renders login page
