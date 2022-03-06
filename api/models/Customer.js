@@ -33,5 +33,10 @@ module.exports = (sequelize, DataType) => {
     {
         tableName:'customers'
     })
+    Customer.associate = function(models) {
+        Customer.hasMany(models.Schedule, {
+            foreignKey: 'customer_id'
+        })
+    }
     return Customer
 }
