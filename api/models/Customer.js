@@ -1,42 +1,44 @@
-module.exports = (sequelize, DataType) => {
-    const Customer = sequelize.define('Customer',{
-        id: {
-            type: DataType.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull:false
-        },
-        first_name: {
-            type: DataType.STRING,
-            allowNull: false
-        },
-        last_name: {
-            type: DataType.STRING,
-            allowNull: true
-        },
-        email: {
-            type: DataType.STRING,
-            allowNull: false
-        },
-        cpf: {
-            type: DataType.STRING,
-            allowNull: true
-        },
-        phone_number: {
-            type: DataType.STRING,
-            allowNull:false
-        },
-        active: {
-            type: DataType.BOOLEAN
-        }
+const Sequelize = require('sequelize');
+const database = require('../config/index')
+
+const Customer = database.define('Customer',{
+    id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull:false
     },
-    {
-        tableName:'customers'
-    })
-    Customer.associate = function(models) {
-        Customer.hasMany(models.Schedule, {
-            foreignKey: 'customer_id'
-        })
+    first_name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    last_name: {
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    cpf: {
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    phone_number: {
+        type: Sequelize.STRING,
+        allowNull:false
+    },
+    active: {
+        type: Sequelize.BOOLEAN
     }
-    return Customer
+},
+{
+    tableName:'customers'
+})
+Customer.associate = function(models) {
+    Customer.hasMany(models.Schedule, {
+        foreignKey: 'customer_id'
+    })
 }
+
+module.exports = Customer
